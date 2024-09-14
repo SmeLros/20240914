@@ -31,7 +31,7 @@ export function NavToggleMenu({ className }: { className?: string }) {
           </Button>
         </CollapsibleTrigger>
         <CollapsibleContent className="absolute left-0 top-[70px] w-full border-t border-[#e5e3da] font-medium md:hidden">
-          <div className="grid p-2.5">
+          <div className="grid bg-white p-2.5">
             <NavMenuItems />
           </div>
         </CollapsibleContent>
