@@ -66,28 +66,44 @@ export function Footer({ className }: { className?: string }) {
                 className="mt-6 list-none space-y-4 p-0 text-sm text-gray-600 *:inset-0 *:leading-6 *:hover:text-gray-900"
               >
                 <li>
-                  <Link href="/use-cases">Use cases</Link>
+                  <Link href="/use-cases" prefetch={false}>
+                    Use cases
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/chrome-extension">Chrome extension</Link>
+                  <Link href="/chrome-extension" prefetch={false}>
+                    Chrome extension
+                  </Link>
                 </li>
                 <li>
-                  <Link href="https://api.pdf.ai/">API docs</Link>
+                  <Link href="https://api.pdf.ai/" prefetch={false}>
+                    API docs
+                  </Link>
                 </li>
                 <li>
-                  <Link href="https://pdf.ai/pricing">Pricing</Link>
+                  <Link href="/pricing" prefetch={false}>
+                    Pricing
+                  </Link>
                 </li>
                 <li>
-                  <Link href="https://pdf.ai/tutorials">Video tutorials</Link>
+                  <Link href="/tutorials" prefetch={false}>
+                    Video tutorials
+                  </Link>
                 </li>
                 <li>
-                  <Link href="https://pdf.ai/resources">Resources</Link>
+                  <Link href="/resources" prefetch={false}>
+                    Resources
+                  </Link>
                 </li>
                 <li>
-                  <Link href="https://pdf.ai/blog">Blog</Link>
+                  <Link href="/blog" prefetch={false}>
+                    Blog
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/faq">FAQ</Link>
+                  <Link href="/faq" prefetch={false}>
+                    FAQ
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -100,34 +116,44 @@ export function Footer({ className }: { className?: string }) {
                 className="mt-6 list-none space-y-4 p-0 text-sm text-gray-600 *:inset-0 *:leading-6 *:hover:text-gray-900"
               >
                 <li>
-                  <Link href="https://pdf.ai/tools/resume-ai-scanner">
+                  <Link href="/tools/resume-ai-scanner" prefetch={false}>
                     Resume AI Scanner
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://pdf.ai/tools/invoice-ai-scanner">
+                  <Link href="/tools/invoice-ai-scanner" prefetch={false}>
                     Invoice AI Scanner
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://pdf.ai/tools/quiz-ai-generator">
+                  <Link href="/tools/quiz-ai-generator" prefetch={false}>
                     AI Quiz Generator
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://quickyai.com">QuickyAI</Link>
+                  <Link href="https://quickyai.com" prefetch={false}>
+                    QuickyAI
+                  </Link>
                 </li>
                 <li>
-                  <Link href="https://docsium.com">Docsium</Link>
+                  <Link href="https://docsium.com" prefetch={false}>
+                    Docsium
+                  </Link>
                 </li>
                 <li>
-                  <Link href="https://pdf.ai/gpts">PDF GPTs</Link>
+                  <Link href="/gpts" prefetch={false}>
+                    PDF GPTs
+                  </Link>
                 </li>
                 <li>
-                  <Link href="https://pdfgen.com">PDF AI generator</Link>
+                  <Link href="https://pdfgen.com" prefetch={false}>
+                    PDF AI generator
+                  </Link>
                 </li>
                 <li>
-                  <Link href="https://pdf.ai/tools">Other PDF tools</Link>
+                  <Link href="/tools" prefetch={false}>
+                    Other PDF tools
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -140,23 +166,32 @@ export function Footer({ className }: { className?: string }) {
                 className="mt-6 list-none space-y-4 p-0 text-sm text-gray-600 *:inset-0 *:leading-6 *:hover:text-gray-900"
               >
                 <li>
-                  <Link href="/compare/chatpdf-alternative">
+                  <Link href="/compare/chatpdf-alternative" prefetch={false}>
                     PDF.ai vs ChatPDF
                   </Link>
                 </li>
                 <li>
-                  <Link href="/compare/adobe-acrobat-reader-alternative">
+                  <Link
+                    href="/compare/adobe-acrobat-reader-alternative"
+                    prefetch={false}
+                  >
                     PDF.ai vs Acrobat Reader
                   </Link>
                 </li>
                 <li>
-                  <Link href="/privacy-policy">Legal</Link>
+                  <Link href="/privacy-policy" prefetch={false}>
+                    Legal
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/affiliate-program">Affiliate program 💵</Link>
+                  <Link href="/affiliate-program" prefetch={false}>
+                    Affiliate program 💵
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/investor">Investor</Link>
+                  <Link href="/investor" prefetch={false}>
+                    Investor
+                  </Link>
                 </li>
               </ul>
             </div>
