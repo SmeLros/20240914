@@ -4,6 +4,7 @@ import {
   createContext,
   Dispatch,
   SetStateAction,
+  useCallback,
   useContext,
   useState,
 } from "react"
@@ -17,6 +18,7 @@ interface PDFViewerContext {
   setFile: Dispatch<SetStateAction<File | null>>
   setScale: Dispatch<SetStateAction<number>>
   setPageCount: React.Dispatch<React.SetStateAction<number>>
+  reset: () => void
 }
 
 export const PDFViewerContext = createContext<PDFViewerContext | null>(null)
@@ -26,6 +28,15 @@ export function PDFViewerProvider({ children }: { children: React.ReactNode }) {
   const [rotates, setRotates] = useState<PDFViewerContext["rotates"]>([])
   const [scale, setScale] = useState<PDFViewerContext["scale"]>(1)
   const [pageCount, setPageCount] = useState(0)
+
+  // 重置所有状态，包括文件、旋转角度、缩放比例和页数
+  const reset = useCallback(() => {
+    setFile(null)
+    setRotates([])
+    setScale(1)
+    setPageCount(0)
+  }, [])
+
   return (
     <PDFViewerContext.Provider
       value={{
@@ -37,6 +48,7 @@ export function PDFViewerProvider({ children }: { children: React.ReactNode }) {
         setRotates,
         setScale,
         setPageCount,
+        reset,
       }}
     >
       {children}
