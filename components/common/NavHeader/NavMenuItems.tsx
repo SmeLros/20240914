@@ -31,6 +31,8 @@ export function NavMenuItems({ className }: { className?: string }) {
             "p-2.5 text-[15px] font-medium text-black hover:underline",
             className,
           )}
+          // 常规来说开启prefetch会提升性能，但这里因为并未实现这些路由，所以关闭prefetch
+          prefetch={false}
         >
           {link.label}
         </Link>
