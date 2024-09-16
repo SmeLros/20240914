@@ -1,36 +1,25 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## 介绍
 
-## Getting Started
+这是一个基于 Next.js 和 React-pdf 实现一个PDF旋转网页的小工具
 
-First, run the development server:
+## 功能
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. 参照 https://pdf.ai/tools/rotate-pdf 网站，完全复制其界面设计和用户体验，确保一致性
+2. 实现PDF旋转功能，允许用户在本地处理文件并下载结果. 无需实现文件上传/下载到云服务器的功能，仅限本地文件操作
+3. 采用你能想到的所有搜索引擎优化（SEO）策略
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 实现
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. 渲染：React-pdf
+2. 编辑和保存：pdf-lib
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 运行
 
-## Learn More
+1. 安装依赖：`npm install`
+2. 启动项目：`npm run dev`
+3. 访问：http://localhost:3000
+4. 点击 Quick start 按钮，进入pdf旋转工具页面
 
-To learn more about Next.js, take a look at the following resources:
+## 注意
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. 本项目仅供学习和参考
