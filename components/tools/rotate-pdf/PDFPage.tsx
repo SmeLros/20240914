@@ -26,7 +26,7 @@ export function PDFPage({ index }: { index: number }) {
       renderTextLayer={false}
       renderAnnotationLayer={false}
       pageNumber={index + 1}
-      className="relative cursor-pointer overflow-hidden bg-white p-3 first:m-auto last:mb-0 hover:!bg-gray-50"
+      className="relative cursor-pointer overflow-hidden bg-white p-3 hover:!bg-gray-50"
       width={200}
       scale={scale}
       key={`page_${index + 1}`}
